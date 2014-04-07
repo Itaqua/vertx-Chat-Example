@@ -1,4 +1,3 @@
-println "dafk"
 sessionMap = [:]
 sessionmanager_address = "com.m4sg.sessionmanager"
 

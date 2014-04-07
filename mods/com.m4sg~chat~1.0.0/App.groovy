@@ -3,8 +3,7 @@ chat_address = "com.m4sg.chat"
 
 eb = vertx.eventBus
 log = container.logger
-/daasdasdas*
-*/
+/*  */
 eb.registerHandler(chat_address){ message ->
    def json = message.body
    log.info json

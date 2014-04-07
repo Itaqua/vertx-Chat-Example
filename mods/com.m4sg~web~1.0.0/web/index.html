@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/sockjs-client/0.3.4/sockjs.min.js"></script>
+   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/vertx/2.0.0/vertxbus.min.js"></script>
+   <script type="text/javascript">
+      var w = window.location;
+      var eb = new vertx.EventBus(w.protocol + '//' + w.hostname + ':' + w.port + '/eventbus');
+      eb.onopen = function(){
+         console.log("EventBus Connected.");
+         
+      };
+
+   </script> 
+</head>
+<body>
+  Si furula... 
+</body>
+</html>
